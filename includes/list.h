@@ -15,4 +15,5 @@ int	list_size(t_list *list);
 t_list	*list_last(t_list *begin_list);
 t_list	*list_push_params(int ac, char **av);
 void	list_clear(t_list **begin_list);
+t_list	*list_at(t_list *begin_list, unsigned int nbr);
 #endif
