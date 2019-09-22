@@ -18,4 +18,6 @@ void	list_clear(t_list **begin_list);
 t_list	*list_at(t_list *begin_list, unsigned int nbr);
 void	list_reverse(t_list **begin_list);
 void	list_foreach(t_list *begin_list, void (*f)(void *));
+void    list_foreach_if(t_list *begin_list, void (*f)(void *),
+            void *data_ref, int (*cmp)(void*, void*));
 #endif
