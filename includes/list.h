@@ -17,4 +17,5 @@ t_list	*list_push_params(int ac, char **av);
 void	list_clear(t_list **begin_list);
 t_list	*list_at(t_list *begin_list, unsigned int nbr);
 void	list_reverse(t_list **begin_list);
+void	list_foreach(t_list *begin_list, void (*f)(void *));
 #endif
